@@ -12,7 +12,7 @@ const DynamicText = () => {
         text.textContent = "React.JS";
       }, 4000);
       setTimeout(() => {
-        text.textContent = "HTML-CSS-Tailwind";
+        text.textContent = "Tailwind";
       }, 8000);
       setTimeout(() => {
         text.textContent = "Javascript";

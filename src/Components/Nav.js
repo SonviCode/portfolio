@@ -7,8 +7,8 @@ export default function Nav() {
   const { changeDarkMode, darkMode } = useContext(ThemeContext);
 
   return (
-    <nav className="fixed w-screen right-0 z-20 flex flex-row justify-between bg-white shadow-md dark:bg-black dark:shadow-blue dark:text-white">
-      <h1 className="pl-[10%] py-4 flex flex-row">Sonvico Tom <span className="hidden sm:flex ml-2"> - Web Developer</span></h1>
+    <nav className="fixed w-screen right-0 z-20 px-[10%] flex flex-row justify-between bg-white shadow-md dark:bg-black dark:shadow-blue dark:text-white">
+      <h1 className=" py-4 flex flex-row">Sonvico Tom <span className="hidden sm:flex ml-2"> - Web Developer</span></h1>
 
       <div className="flex flex-1 gap-8 pt-2 justify-end">
         <button
@@ -18,7 +18,7 @@ export default function Nav() {
           <i className={darkMode ? "fa-solid fa-sun text-2xl absolute top-1 left-1 text-black" : " fa-regular fa-moon text-2xl absolute top-1 left-2"}></i>
           {darkMode ? "Light" : "Dark" }
         </button>
-        <ul className="hidden flex-row gap-8 pt-2 pr-[10%] lg:flex">
+        <ul className="hidden flex-row gap-8 pt-2  lg:flex">
           <li>
             <a
               href="#home"
