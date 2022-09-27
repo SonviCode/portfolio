@@ -17,10 +17,19 @@ module.exports = {
         },
       },
       colors: {
-        'white': "#f1f1f1",
-        'black': "#0E162A",
-        'orange': "rgb(234 88 12)",
-        'blue': "#1A4463",
+        white: "rgb(241 241 241)",
+        black: "rgb(14 22 42)",
+        orange: "rgb(234 88 12)",
+        blue: "#1A4463",
+        footerWhite: "rgb(203 213 225)",
+        footerBlack: "rgb(31,41,58)",
+      },
+      boxShadow: {
+        btn: "0px 4px 10px 0px rgba(0,0,0,0.53)",
+      },
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(100px, 1fr))',
+        'auto-fill': 'repeat(auto-fill, minmax(100px, 1fr))',
       },
     },
   },

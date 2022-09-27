@@ -6,19 +6,32 @@ export default function ThemeContextProvider(props) {
   const [darkMode, setDarkMode] = useState(false);
 
   const changeDarkMode = () => {
-    // document.querySelector('html').classList.toggle('.dark');
     setDarkMode(!darkMode);
-    console.log("ok");
   };
+
+  let colorBackground;
+  let colorText;
+  let colorDeco;
+  let colorFooter;
 
   if (darkMode) {
     document.querySelector("html").classList.add("dark");
+    colorBackground = "black";
+    colorText = "white";
+    colorDeco = "blue";
+    colorFooter = "footerBlack";
   } else {
     document.querySelector("html").classList.remove("dark");
+    colorBackground = "white";
+    colorText = "black";
+    colorDeco = "orange";
+    colorFooter = "footerWhite";
   }
 
   return (
-    <ThemeContext.Provider value={{ changeDarkMode, darkMode }}>
+    <ThemeContext.Provider
+      value={{ changeDarkMode, darkMode, colorBackground, colorText, colorFooter, colorDeco }}
+    >
       {props.children}
     </ThemeContext.Provider>
   );

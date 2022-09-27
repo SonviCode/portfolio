@@ -1,7 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 const DynamicText = () => {
+  const { colorBackground, colorText, colorDeco} = useContext(ThemeContext);
+
   useEffect(() => {
+
     const text = document.querySelector("#text-target");
 
     const textLoad = () => {
@@ -28,11 +32,11 @@ const DynamicText = () => {
 
   return (
     <span className="overflow-hidden">
-      <h2 className="text-smTitle font-semibold dark:text-white">Je suis un développeur : </h2>
+      <h2 className={`text-smTitle font-semibold text-${colorText}`}>Je suis un développeur : </h2>
       <span
         id="text-target"
-        className="text-orange w-fit relative text-3xl after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-white after:border-l-2 after:border-orange  
-      after:animate-[animate_4s_steps(12)_infinite] dark:text-blue  dark:after:border-blue dark:after:bg-black"
+        className={`text-${colorDeco} w-fit relative text-3xl after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-${colorBackground} after:border-l-2 after:border-${colorDeco}  
+        after:animate-[animate_4s_steps(12)_infinite]`}
       ></span>
     </span>
   );

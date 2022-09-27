@@ -1,3 +1,144 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ajout des classes que tailwind n'affiche pas directement à cause des mes fonctions qui sont dynamique et donc ne sont pas prise en compte à la création des classes créer dans le ThèmeContext.js */
+
+.after\:bg-orange::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
+.after\:bg-blue::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 68 99 / var(--tw-bg-opacity));
+}
+
+.after\:bg-white::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 241 241 / var(--tw-bg-opacity));
+}
+
+.after\:bg-black::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 22 42 / var(--tw-bg-opacity));
+}
+
+.after\:border-orange::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(234 88 12 / var(--tw-border-opacity));
+}
+
+.after\:border-blue::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(26 68 99 / var(--tw-border-opacity));
+}
+
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(26 68 99 / var(--tw-text-opacity));
+}
+.text-orange {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 22 42 / var(--tw-bg-opacity));
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 68 99 / var(--tw-bg-opacity));
+}
+
+.border-orange {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 88 12 / var(--tw-border-opacity));
+}
+
+.border-blue {
+  --tw-border-opacity: 1;
+  border-color: rgb(26 68 99 / var(--tw-border-opacity));
+}
+
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 22 42 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 241 241 / var(--tw-bg-opacity));
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(14 22 42 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(241 241 241 / var(--tw-text-opacity));
+}
+
+.hover\:border-orange:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 88 12 / var(--tw-border-opacity));
+}
+
+.hover\:border-blue:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(26 68 99 / var(--tw-border-opacity));
+}
+
+.hover\:text-orange:hover {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(26 68 99 / var(--tw-text-opacity));
+}
+
+.bg-footerWhite {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-footerBlack {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 58 / var(--tw-bg-opacity));
+}
+
+
+/* MON CSS AJOUTE */
+
+#project-content:nth-child(2) #project-lang  {
+  justify-content: center;
+}
+#project-content:nth-child(2)  #project-btn {
+  justify-content: center;
+}
+
+#project-content:nth-child(3) #project-lang {
+  justify-content: end;
+}
+
+#project-content:nth-child(3) #project-btn {
+  justify-content: end;
+}
+
