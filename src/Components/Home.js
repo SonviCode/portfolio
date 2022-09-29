@@ -22,7 +22,7 @@ export default function Home() {
         className={`pointer-events-none w-12 h-12 rounded-full border-${colorDeco} absolute border-2 translate-x-[-50%] translate-y-[-50%] duration-300 ease-out z-30`}
       ></div>
       <section id="accueil">
-        <div className="flex flex-col pt-52 sm:pt-0 px-[10%] justify-around items-center h-screen gap-12 md:flex-row">
+        <div className="flex flex-col pt-32 sm:pt-0 px-[10%] justify-around items-center sm:h-screen gap-12 md:flex-row">
           <div className="flex-1 flex flex-col">
             <h1 className={`text-xlTitle font-semibold text-${colorText}`}>
               Hello, <br />
@@ -38,7 +38,7 @@ export default function Home() {
             </a>
           </div>
           <div
-            className={`flex-1 flex justify-center relative after:content-[''] after:w-[250px] after:h-[300px] after:absolute after:rounded-lg after:-z-10 after:bg-${colorDeco} after:top-[55%] after:left-[40%] after:translate-x-[-50%] after:translate-y-[-50%] after:-rotate-6
+            className={`flex-1 flex flex-col justify-center items-center  gap-20 relative after:content-[''] after:w-[250px] after:h-[300px] after:absolute after:rounded-lg after:-z-10 after:bg-${colorDeco} after:top-[35%] after:left-[40%] after:translate-x-[-50%] after:translate-y-[-50%] after:-rotate-6
             `}
           >
             <img
@@ -46,6 +46,22 @@ export default function Home() {
               src={pp}
               alt="tête de profil"
             />
+            <div className="flex gap-10 justify-end">
+              <a
+                href="https://www.linkedin.com/in/tom-sonvico/"
+                target="blank"
+                className={`text-${colorText} text-6xl hover:text-${colorDeco} `}
+              >
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/SonviCode"
+                target="blank"
+                className={`text-${colorText} text-6xl hover:text-${colorDeco} `}
+              >
+                <i className="fa-brands fa-github"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>

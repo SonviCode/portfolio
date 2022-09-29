@@ -114,14 +114,14 @@
   color: rgb(26 68 99 / var(--tw-text-opacity));
 }
 
-.bg-footerWhite {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
 .bg-footerBlack {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 58 / var(--tw-bg-opacity));
+}
+
+.bg-footerWhite{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 
