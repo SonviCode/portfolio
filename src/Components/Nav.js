@@ -74,17 +74,19 @@ export default function Nav() {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-      </div>
 
-      <button className="lg:hidden absolute right-[10%] top-3">
-        <img
-          className="w-8 h-8 object-cover dark:color-white -translate-y-[100px]"
-          src={darkMode ? menuWhite : menuBlack}
-          alt="icone menu"
-          ref={menuToggleRef}
+        <button
           onClick={changeOverlay}
-        />
-      </button>
+          className="lg:hidden absolute top-3 pointer"
+        >
+          <img
+            className="w-8 h-8 object-cover -translate-y-[100px]"
+            src={darkMode ? menuWhite : menuBlack}
+            alt="icone menu"
+            ref={menuToggleRef}
+          />
+        </button>
+      </div>
 
       {toggleOverlay ? (
         <div

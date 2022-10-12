@@ -8,7 +8,7 @@ export const projectsData = [
     languages3: "./assets/img/swiper.png",
     infos:
       "Site designé et crée totalement from scratch. Utilisation de ReactJs et Tailwind ainsi que SwiperJS. Requêtes faites à l'API TheMealDB grâce à Axios",
-    img: "./assets/img/projet-1.jpg",
+    img: "./assets/img/500g-cook.png",
     website: "https://500g-cook.vercel.app/",
     github: "https://github.com/SonviCode/cooking-website",
   },

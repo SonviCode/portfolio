@@ -44,14 +44,14 @@ export default function Home() {
     });
 
       gsap.to(imgRef.current, {
-        rotate: 20,
+        rotate: 18,
         delay: 2,
         duration: 1,
         opacity: 1,
         ease: "power4",
       });
       gsap.to(afterRef.current, {
-        rotate: -12,
+        rotate: -10,
         delay: 2,
         duration: 1,
         opacity: 1,
@@ -93,11 +93,11 @@ export default function Home() {
           >
             <div
               ref={afterRef}
-              className={`relative opacity-0 after:content-[''] after:w-[250px] after:h-[300px] after:absolute after:rounded-lg after:-z-10 after:bg-${colorDeco} after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 `}
+              className={`relative opacity-0 after:content-[''] after:w-[250px] after:h-[300px] after:absolute after:rounded-lg after:-z-10 after:bg-${colorDeco} after:top-1/2 after:left-[41%] after:-translate-x-1/2 after:-translate-y-1/2 `}
             >
               <img
                 ref={imgRef}
-                className={`w-[250px] h-[300px] object-cover rounded-lg object-center bg-fixed opacity-0 `}
+                className={`relative left-5 w-[250px] h-[300px] object-cover rounded-lg object-center bg-fixed opacity-0 `}
                 src={pp}
                 alt="tête de profil"
               />
