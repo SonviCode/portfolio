@@ -10,7 +10,7 @@ export default function Contact() {
       id="contact"
       className={`bg-${colorFooter} text-${colorText} px-[10%] pt-20 `}
     >
-      <div className="flex flex-col md:flex-row gap-y-10">
+      <div className="flex flex-col md:flex-row gap-y-10 max-w-7xl mx-auto">
         <div className="flex-1">
           <FormContact />
         </div>
@@ -50,7 +50,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between gap-5 pt-20 pb-10 text-xs">
+      <div className="flex flex-col md:flex-row justify-between gap-5 pt-20 pb-10 text-xs max-w-7xl mx-auto">
         <p>© Website Professional created by Tom Sonvico - 2022</p>
         <p>Realized with React and Tailwind</p>
       </div>

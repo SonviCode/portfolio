@@ -8,9 +8,9 @@ export default function Projects() {
   return (
     <section
       id="project"
-      className="px-[10%] py-[200px] md:pt-20 overflow-hidden"
+      className="px-[10%] py-[200px] md:pt-20 overflow-hidden "
     >
-      <div className="flex flex-col gap-52 ">
+      <div className="flex flex-col gap-52 max-w-7xl mx-auto">
         {listProject.map((projet) => (
           <Project projet={projet} key={projet.id} />
         ))}

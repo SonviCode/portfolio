@@ -38,107 +38,109 @@ export default function Nav() {
 
   return (
     <nav
-      className={`fixed w-screen left-0 z-20 px-[10%] flex flex-row justify-between bg-${colorBackground} shadow-md  dark:shadow-blue text-${colorText}`}
+      className={`fixed w-screen left-0 z-20 px-[10%]  bg-${colorBackground} shadow-md  dark:shadow-blue text-${colorText}`}
     >
-      <h1
-        className=" py-4 flex flex-row z-20 -translate-y-[100px]"
-        ref={titleRef}
-      >
-        Sonvico Tom{" "}
-        <span className="hidden sm:flex ml-2"> - Web Developer</span>
-      </h1>
-
-      <div
-        className="flex flex-1 gap-8 pt-2 justify-end z-20 -translate-y-[100px]"
-        ref={menuRef}
-      >
-        <button
-          className="flex relative pointer pl-8 pr-2 py-2 h-min rounded-lg bg-gray-200 hover:bg-gray-300 mr-10 lg:mr-0 dark:text-black"
-          onClick={changeDarkMode}
+      <div className="flex flex-row justify-between max-w-7xl mx-auto">
+        <h1
+          className=" py-4 flex flex-row z-20 -translate-y-[100px]"
+          ref={titleRef}
         >
-          <i
-            className={
-              darkMode
-                ? "fa-solid fa-sun text-2xl absolute top-1 left-1 text-black"
-                : " fa-regular fa-moon text-2xl absolute top-1 left-2"
-            }
-          ></i>
-          {darkMode ? "Light" : "Dark"}
-        </button>
-        <ul className="hidden flex-row gap-8 pt-2 lg:flex">
-          <li>
-            <a href="#project">Projets</a>
-          </li>
+          Sonvico Tom{" "}
+          <span className="hidden sm:flex ml-2"> - Web Developer</span>
+        </h1>
 
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button
-          onClick={changeOverlay}
-          className="lg:hidden absolute top-3 pointer"
-        >
-          <img
-            className="w-8 h-8 object-cover -translate-y-[100px]"
-            src={darkMode ? menuWhite : menuBlack}
-            alt="icone menu"
-            ref={menuToggleRef}
-          />
-        </button>
-      </div>
-
-      {toggleOverlay ? (
         <div
-          className={`absolute h-screen w-full   backdrop-blur-3xl left-0 top-0 -z-10`}
+          className="flex flex-1 gap-8 pt-2 justify-end z-20 -translate-y-[100px]"
+          ref={menuRef}
         >
-          <div
-            className={`absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 bg-${colorBackground} text-${colorText} p-10 rounded-lg w-[70%] max-w-[500px]`}
+          <button
+            className="flex relative pointer pl-8 pr-2 py-2 h-min rounded-lg bg-gray-200 hover:bg-gray-300 mr-10 lg:mr-0 dark:text-black"
+            onClick={changeDarkMode}
           >
-            <ul className="flex flex-col items-center gap-5 text-xl w-full">
-              <li>
-                <a
-                  href="#project"
-                  onClick={changeOverlay}
-                  className={`hover:text-${colorDeco}`}
-                >
-                  <i className="fa-solid fa-diagram-project"></i> Projets
-                </a>
-              </li>
+            <i
+              className={
+                darkMode
+                  ? "fa-solid fa-sun text-2xl absolute top-1 left-1 text-black"
+                  : " fa-regular fa-moon text-2xl absolute top-1 left-2"
+              }
+            ></i>
+            {darkMode ? "Light" : "Dark"}
+          </button>
+          <ul className="hidden flex-row gap-8 pt-2 lg:flex">
+            <li>
+              <a href="#project">Projets</a>
+            </li>
 
-              <li>
-                <a
-                  href="#contact"
-                  onClick={changeOverlay}
-                  className={`hover:text-${colorDeco}`}
-                >
-                  <i className="fa-sharp fa-solid fa-id-card"></i> Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/tom-sonvico/"
-                  target="blank"
-                  className={`hover:text-${colorDeco}`}
-                >
-                  <i className="fa-brands fa-linkedin"></i> Linkedin
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/SonviCode"
-                  target="blank"
-                  className={`hover:text-${colorDeco}`}
-                >
-                  <i className="fa-brands fa-github"></i> Github
-                </a>
-              </li>
-            </ul>
-          </div>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <button
+            onClick={changeOverlay}
+            className="lg:hidden absolute top-3 pointer"
+          >
+            <img
+              className="w-8 h-8 object-cover -translate-y-[100px]"
+              src={darkMode ? menuWhite : menuBlack}
+              alt="icone menu"
+              ref={menuToggleRef}
+            />
+          </button>
         </div>
-      ) : (
-        ""
-      )}
+
+        {toggleOverlay ? (
+          <div
+            className={`absolute h-screen w-full   backdrop-blur-3xl left-0 top-0 -z-10`}
+          >
+            <div
+              className={`absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 bg-${colorBackground} text-${colorText} p-10 rounded-lg w-[70%] max-w-[500px]`}
+            >
+              <ul className="flex flex-col items-center gap-5 text-xl w-full">
+                <li>
+                  <a
+                    href="#project"
+                    onClick={changeOverlay}
+                    className={`hover:text-${colorDeco}`}
+                  >
+                    <i className="fa-solid fa-diagram-project"></i> Projets
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#contact"
+                    onClick={changeOverlay}
+                    className={`hover:text-${colorDeco}`}
+                  >
+                    <i className="fa-sharp fa-solid fa-id-card"></i> Contact
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/tom-sonvico/"
+                    target="blank"
+                    className={`hover:text-${colorDeco}`}
+                  >
+                    <i className="fa-brands fa-linkedin"></i> Linkedin
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/SonviCode"
+                    target="blank"
+                    className={`hover:text-${colorDeco}`}
+                  >
+                    <i className="fa-brands fa-github"></i> Github
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
     </nav>
   );
 }

@@ -61,12 +61,12 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <>
       <div
         id="cursor"
         className={`pointer-events-none w-12 h-12 rounded-full border-${colorDeco} absolute border-2 translate-x-[-50%] translate-y-[-50%] duration-300 ease-out z-30`}
       ></div>
-      <section id="accueil">
+      <section id="accueil" className="max-w-7xl mx-auto">
         <div className="flex flex-col pt-32 md:pt-0 px-[10%] justify-around items-center md:h-screen gap-12 md:flex-row">
           <div className="flex-1 flex flex-col">
             <h1
@@ -123,6 +123,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
