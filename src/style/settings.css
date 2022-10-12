@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ajout des classes que tailwind n'affiche pas directement à cause des mes fonctions qui sont dynamique et donc ne sont pas prise en compte à la création des classes créer dans le ThèmeContext.js */
+/* ajout des classes que tailwind n'affiche pas directement à cause des mes variables qui sont dynamique et donc ne sont pas prise en compte à la création des classes créer dans le ThèmeContext.js */
 
 .after\:bg-orange::after {
   content: var(--tw-content);

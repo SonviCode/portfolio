@@ -19,11 +19,11 @@ module.exports = {
           "0%": { transform: "scaleY(0%)" },
           "100%": { transform: "scaleY(100%)" },
         },
-        apparitionOnLeft:{
+        apparitionOnLeft: {
           "50%": { transform: "translate(0%)" },
           "100%": { transform: "translate(-100%)" },
         },
-        apparitionOnRight:{
+        apparitionOnRight: {
           "50%": { transform: "translate(0%)" },
           "100%": { transform: "translate(100%)" },
         },

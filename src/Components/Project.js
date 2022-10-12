@@ -14,7 +14,7 @@ export default function Project({ projet }) {
       [&:nth-child(3)]:after:right-auto [&:nth-child(3)]:after:-left-52
       `}
     >
-      <div className="flex flex-col flex-1">
+      <div className="flex flex-col flex-1 w-full">
         <h1 className={`text-lgTitle font-semibold italic text-${colorText}`}>
           {projet.title}
         </h1>
