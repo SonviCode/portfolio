@@ -3,9 +3,11 @@ export const projectsData = [
     id: 1,
     title: "500g - Site de cuisine",
     date: "Octobre 2022",
-    languages1: "./assets/img/react.png",
-    languages2: "./assets/img/tailwind.webp",
-    languages3: "./assets/img/swiper.png",
+    languages: [
+      "./assets/img/react.png",
+      "./assets/img/tailwind.webp",
+      "./assets/img/swiper.png",
+    ],
     infos:
       "Site designé et crée totalement from scratch. Utilisation de ReactJs et Tailwind ainsi que SwiperJS. Requêtes faites à l'API TheMealDB grâce à Axios",
     img: "./assets/img/500g-cook.png",
@@ -16,9 +18,11 @@ export const projectsData = [
     id: 2,
     title: "Manage Landing Page",
     date: "Aout 2022",
-    languages1: "./assets/img/html.png",
-    languages2: "./assets/img/css.png",
-    languages3: "./assets/img/js.png",
+    languages: [
+      "./assets/img/html.png",
+      "./assets/img/css.png",
+      "./assets/img/js.png",
+    ],
 
     infos:
       "Site réalisé à partir d'une maquette PNG, reçu grâce à FrontEnd Mentor. Codé entièrement en vanilla (sans framework). Utilisation de GSAP et de Swiper.JS",

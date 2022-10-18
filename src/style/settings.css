@@ -119,18 +119,17 @@
   background-color: rgb(31 41 58 / var(--tw-bg-opacity));
 }
 
-.bg-footerWhite{
+.bg-footerWhite {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-
 /* MON CSS AJOUTE */
 
-#project-content:nth-child(2) #project-lang  {
+#project-content:nth-child(2) #project-lang {
   justify-content: center;
 }
-#project-content:nth-child(2)  #project-btn {
+#project-content:nth-child(2) #project-btn {
   justify-content: center;
 }
 
@@ -142,8 +141,13 @@
   justify-content: end;
 }
 
-html,body{
-  width:100%;
-  overflow-x:hidden;
+/* #project-content:nth-child(1) .mokup {
+  transform: translateX(400px);
+} */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 

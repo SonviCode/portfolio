@@ -4,6 +4,8 @@ import App from "./App";
 import ThemeContextProvider from "./Components/ThemeContext";
 import "./style/settings.css";
 
+document.documentElement.classList.add('dark')
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>

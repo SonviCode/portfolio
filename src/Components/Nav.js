@@ -23,39 +23,41 @@ export default function Nav() {
     setToggleOverlay(!toggleOverlay);
   };
 
-  const titleRef = useRef(null);
-  const menuRef = useRef(null);
-  const menuToggleRef = useRef(null);
-
+  const navRef = useRef();
+ 
   useEffect(() => {
-    gsap.to([titleRef.current, menuRef.current, menuToggleRef.current], {
-      y: 0,
-      delay: 3,
-      duration: 1,
-      ease: "power4",
-    });
+    const ctx = gsap.context(() => {
+      gsap.to("#animate", {
+        y: 0,
+        delay: 3,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power4",
+      });
+    }, navRef);
+
+    return () => ctx.revert();
   }, []);
 
   return (
     <nav
+      ref={navRef}
       className={`fixed w-screen left-0 z-20 px-[10%]  bg-${colorBackground} shadow-md  dark:shadow-blue text-${colorText}`}
     >
       <div className="flex flex-row justify-between max-w-7xl mx-auto">
         <h1
           className=" py-4 flex flex-row z-20 -translate-y-[100px]"
-          ref={titleRef}
+          id="animate"
         >
           Sonvico Tom{" "}
           <span className="hidden sm:flex ml-2"> - Web Developer</span>
         </h1>
 
-        <div
-          className="flex flex-1 gap-8 pt-2 justify-end z-20 -translate-y-[100px]"
-          ref={menuRef}
-        >
+        <div className="flex flex-1 gap-8 pt-2 justify-end z-20">
           <button
-            className="flex relative pointer pl-8 pr-2 py-2 h-min rounded-lg bg-gray-200 hover:bg-gray-300 mr-10 lg:mr-0 dark:text-black"
+            className="flex relative pointer pl-8 pr-2 py-2 h-min rounded-lg bg-gray-200 hover:bg-gray-300 mr-10 lg:mr-0 dark:text-black -translate-y-[100px]"
             onClick={changeDarkMode}
+            id="animate"
           >
             <i
               className={
@@ -67,11 +69,11 @@ export default function Nav() {
             {darkMode ? "Light" : "Dark"}
           </button>
           <ul className="hidden flex-row gap-8 pt-2 lg:flex">
-            <li>
+            <li id="animate" className="-translate-y-[100px]">
               <a href="#project">Projets</a>
             </li>
 
-            <li>
+            <li id="animate" className="-translate-y-[100px]">
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -84,7 +86,7 @@ export default function Nav() {
               className="w-8 h-8 object-cover -translate-y-[100px]"
               src={darkMode ? menuWhite : menuBlack}
               alt="icone menu"
-              ref={menuToggleRef}
+              id="animate"
             />
           </button>
         </div>
