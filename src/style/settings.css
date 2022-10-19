@@ -141,6 +141,11 @@
   justify-content: end;
 }
 
+#accueil {
+  fill: rgb(14 22 42);
+}
+
+
 /* #project-content:nth-child(1) .mokup {
   transform: translateX(400px);
 } */
@@ -150,4 +155,3 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-

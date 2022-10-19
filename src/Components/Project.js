@@ -8,6 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Project({ projet }) {
   const { colorBackground, colorText, colorDeco } = useContext(ThemeContext);
 
+  const imgProject = projet.languages;
+
   // ANIM GSAP
   const articleRef = useRef();
 
@@ -17,11 +19,11 @@ export default function Project({ projet }) {
         duration: 1,
         opacity: 1,
         y: 0,
-        // autoAlpha: 1,
+        autoAlpha: 1,
         stagger: 0.2,
         scrollTrigger: {
           trigger: "#animate",
-          markers: true,
+          // markers: true,
           start: "top 80%",
           toggleActions: "play none none reverse ",
         },
@@ -30,23 +32,6 @@ export default function Project({ projet }) {
 
     return () => ctx.revert();
   }, []);
-
-  // const gsapAnim = () => {
-  //   gsap.to(articleRef, {
-  //     duration: 1,
-  //     y: 0,
-  //     autoAlpha: 1,
-  //     stagger: 0.2,
-  //     scrollTrigger: {
-  //       trigger: articleRef,
-  //       // markers: true,
-  //       start: "top 50%",
-  //       toggleActions: "play none none reverse ",
-  //     },
-  //   });
-  // };
-
-  const imgProject = projet.languages;
 
   return (
     <article
@@ -83,7 +68,7 @@ export default function Project({ projet }) {
         <p className="italic text-gray-400 opacity-0 translate-y-[100px]" id="animate">
           {projet.date}
         </p>
-        <div className="flex gap-5 opacity-0 translate-y-[100px]" id="project-btn">
+        <div className="flex gap-5" id="project-btn">
           <a
             href={projet.github}
             target="blank"
