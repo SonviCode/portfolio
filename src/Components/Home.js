@@ -71,7 +71,7 @@ export default function Home() {
           xmlns="http://www.w3.org/2000/svg"
           className="svg-bg absolute top-1/2 left-0"
           viewBox="0 0 1600 900"
-        >
+        > 
           <rect
             fill="currentColor"
             width="1600"
