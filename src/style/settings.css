@@ -140,11 +140,13 @@
 #project-content:nth-child(3) #project-btn {
   justify-content: end;
 }
+#project-content:nth-child(1) .infos {
+  margin-left: 0;
+}
 
 #accueil {
   fill: rgb(14 22 42);
 }
-
 
 /* #project-content:nth-child(1) .mokup {
   transform: translateX(400px);
@@ -153,5 +155,5 @@
 html,
 body {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }

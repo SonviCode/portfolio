@@ -144,7 +144,7 @@ export default function Home() {
           <div className="flex-1 flex flex-col">
             <h1
               className={`text-xlTitle font-semibold text-${colorText}
-            -translate-x-[200px] opacity-0 sticky top-0`}
+            -translate-x-[200px] opacity-0`}
               id="animate"
             >
               Hello, <br />
@@ -162,7 +162,7 @@ export default function Home() {
             </a>
           </div>
           <div
-            className={`flex-1 flex flex-col justify-center items-center  gap-20`}
+            className={`flex-1 flex flex-col justify-center items-center gap-20 sticky top-0`}
           >
             <div
               ref={afterRef}

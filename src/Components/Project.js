@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { gsap } from "gsap";
 import { useRef } from "react";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Project({ projet }) {
@@ -19,6 +19,7 @@ export default function Project({ projet }) {
         duration: 1,
         opacity: 1,
         y: 0,
+        x: 0,
         autoAlpha: 1,
         stagger: 0.2,
         scrollTrigger: {
@@ -62,10 +63,16 @@ export default function Project({ projet }) {
             />
           ))}
         </div>
-        <p className={`text-${colorText} opacity-0 translate-y-[100px] max-w-[600px] mx-auto`} id="animate">
+        <p
+          className={`text-${colorText} opacity-0 translate-y-[100px] max-w-[600px] mx-auto infos`}
+          id="animate"
+        >
           {projet.infos}
         </p>
-        <p className="italic text-gray-400 opacity-0 translate-y-[100px]" id="animate">
+        <p
+          className="italic text-gray-400 opacity-0 translate-y-[100px]"
+          id="animate"
+        >
           {projet.date}
         </p>
         <div className="flex gap-5" id="project-btn">
@@ -73,7 +80,7 @@ export default function Project({ projet }) {
             href={projet.github}
             target="blank"
             id="animate"
-            className={`pointer mt-4 px-4 py-2.5 rounded-lg bg-${colorDeco} text-white w-max border-2 border-${colorDeco} hover:shadow-btn hover:bg-${colorBackground} hover:text-${colorDeco}  hover:border-${colorDeco} opacity-0 translate-y-[100px]`}
+            className={`pointer mt-4 px-4 py-2.5 rounded-lg bg-${colorDeco} text-white w-max border-2 border-${colorDeco} hover:shadow-btn hover:bg-${colorBackground} hover:text-${colorDeco}  hover:border-${colorDeco} opacity-0 -translate-x-[100px]`}
           >
             Voir le code
           </a>
@@ -81,7 +88,7 @@ export default function Project({ projet }) {
             href={projet.website}
             target="blank"
             id="animate"
-            className={`pointer mt-4 px-4 py-2.5 rounded-lg bg-${colorDeco} text-white w-max border-2 border-${colorDeco} hover:shadow-btn hover:bg-${colorBackground} hover:text-${colorDeco}  hover:border-${colorDeco} opacity-0 translate-y-[100px]`}
+            className={`pointer mt-4 px-4 py-2.5 rounded-lg bg-${colorDeco} text-white w-max border-2 border-${colorDeco} hover:shadow-btn hover:bg-${colorBackground} hover:text-${colorDeco}  hover:border-${colorDeco} opacity-0 translate-x-[100px]`}
           >
             Voir le projet
           </a>
@@ -89,10 +96,10 @@ export default function Project({ projet }) {
       </div>
       <div className="flex- flex items-center">
         <img
-        id="animate"
+          id="animate"
           src={projet.img}
           alt={projet.title}
-          className="shadow-btn dark:shadow-blue opacity-0 mokup translate-y-[100px]"
+          className="shadow-btn dark:shadow-blue opacity-0 mokup translate-x-[100px]"
         />
       </div>
     </article>

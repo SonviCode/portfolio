@@ -14,6 +14,7 @@ import redux from '../assets/redux.webp';
 import tailwind from '../assets/tailwind.webp';
 import { gsap } from "gsap";
 import { useRef } from "react";
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
