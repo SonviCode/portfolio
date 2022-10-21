@@ -1049,7 +1049,7 @@ video {
 html,
 body {
   width: 100%;
-  overflow: clip;
+  overflow-x: clip;
 }
 
 .before\:fixed::before {

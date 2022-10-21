@@ -45,7 +45,7 @@ export default function Technos() {
         </div>
       </div>
       {/* <div className="h-[800px] w-full bg-red-600">
-        <Parallax ref={parallax} pages={2} >
+        <Parallax ref={parallax} pages={1} >
           <ParallaxLayer
             offset={0}
             speed={1}
