@@ -27,17 +27,21 @@ export default function Main() {
       <div
         ref={refIntro}
         className="after:fixed after:bg-white after:w-1 after:h-full after:z-50 after:left-[50%] after:top-[0]  after:content-['']after:rounded-t-sm
-      after:animate-[apparition_1s_ease-in]
-      "
+        after:animate-[apparition_1s_ease-in]
+        "
       ></div>
+
       <header>
         <Nav />
+
         <Home />
       </header>
       <main>
         <Projects />
+
         <Technos />
       </main>
+
       <Contact />
     </div>
   );

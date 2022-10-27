@@ -5,6 +5,7 @@ import DynamicText from "./DynamicText";
 import { ThemeContext } from "./ThemeContext";
 import { gsap } from "gsap";
 import { useRef } from "react";
+import { MouseParallax } from "react-just-parallax";
 
 export default function Home() {
   const { colorBackground, colorText, colorDeco } = useContext(ThemeContext);
@@ -71,7 +72,7 @@ export default function Home() {
           xmlns="http://www.w3.org/2000/svg"
           className="svg-bg absolute top-1/2 left-0"
           viewBox="0 0 1600 900"
-        > 
+        >
           <rect
             fill="currentColor"
             width="1600"
@@ -164,17 +165,23 @@ export default function Home() {
           <div
             className={`flex-1 flex flex-col justify-center items-center gap-20 sticky top-0`}
           >
-            <div
-              ref={afterRef}
-              className={`relative opacity-0 after:content-[''] after:w-[250px] after:h-[300px] after:absolute after:rounded-lg after:-z-10 after:bg-${colorDeco} after:top-1/2 after:left-[41%] after:-translate-x-1/2 after:-translate-y-1/2 `}
+            <MouseParallax
+            strength="-0.05"
             >
-              <img
-                ref={imgRef}
-                className={`relative left-5 w-[250px] h-[300px] object-cover rounded-lg object-center bg-fixed opacity-0`}
-                src={pp}
-                alt="tête de profil"
-              />
-            </div>
+              <div
+                ref={afterRef}
+                className={`relative opacity-0 after:content-[''] after:w-[250px] after:h-[300px] after:absolute after:rounded-lg after:-z-10 after:bg-${colorDeco} after:top-1/2 after:left-[41%] after:-translate-x-1/2 after:-translate-y-1/2 `}
+              >
+               
+                  <img
+                    ref={imgRef}
+                    className={`relative left-5 md:left-20 lg:left-32 w-[250px] h-[300px] object-cover rounded-lg object-center bg-fixed opacity-0`}
+                    src={pp}
+                    alt="tête de profil"
+                  />
+                
+              </div>
+            </MouseParallax>
             <div className="flex gap-10 justify-end">
               <a
                 id="animate"
