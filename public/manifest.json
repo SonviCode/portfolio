@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tom Sonvico - Développeur web",
+  "name": "Développeur web front-end React.JS Bienvenue sur mon portfolio : vous retrouverez mes projets réalisés.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "./assets/img/laptop-solid.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "./assets/img/laptop-solid.svg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "./assets/img/laptop-solid.svg",
       "type": "image/png",
       "sizes": "512x512"
     }

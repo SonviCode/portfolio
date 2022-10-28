@@ -177,7 +177,7 @@ export default function Home() {
                     ref={imgRef}
                     className={`relative left-5 md:left-20 lg:left-32 w-[250px] h-[300px] object-cover rounded-lg object-center bg-fixed opacity-0`}
                     src={pp}
-                    alt="tête de profil"
+                    alt="tête de Sonvico Tom"
                   />
                 
               </div>
