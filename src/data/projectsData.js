@@ -20,7 +20,7 @@ export const projectsData = [
     date: "Aout 2022",
     languages: [
       "./assets/img/html.png",
-      "./assets/img/css.png",
+      "./assets/img/sass.png",
       "./assets/img/js.png",
     ],
 

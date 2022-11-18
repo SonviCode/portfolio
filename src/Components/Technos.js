@@ -11,16 +11,17 @@ import firebase from "../assets/firebase.webp";
 import git from "../assets/git.png";
 import react from "../assets/react.png";
 import redux from "../assets/redux.webp";
+import typescript from "../assets/typescript.jpg";
 import tailwind from "../assets/tailwind.webp";
 import { gsap } from "gsap";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+// import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Technos() {
   const { colorText } = useContext(ThemeContext);
 
-  const parallax = useRef(!null);
+  // const parallax = useRef(!null);
 
   return (
     <section id="techno">
@@ -42,6 +43,7 @@ export default function Technos() {
           <Techno icon={tailwind} name="Tailwind" />
           <Techno icon={react} name="React.JS" />
           <Techno icon={redux} name="Redux" />
+          <Techno icon={typescript} name="Typescript" />
         </div>
       </div>
       {/* <div className="h-[800px] w-full bg-red-600">
