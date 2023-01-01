@@ -16,16 +16,16 @@ export default function Contact() {
         </div>
         <div className="flex-1 md:text-right flex md:flex-col md:justify-center gap-10 flex-wrap">
           <div>
-            <h4 className="text-2xl font-medium">
+            <h3 className="text-2xl font-medium">
               <i className="fa-solid fa-location-dot"></i> Adresse :
-            </h4>
+            </h3>
             <p>France, Alsace</p>
             <p>67 000 Strasbourg</p>
           </div>
           <div>
-            <h4 className="text-2xl font-medium">
+            <h3 className="text-2xl font-medium">
               <i className="fa-solid fa-envelope"></i> Email :
-            </h4>
+            </h3>
             <CopyToClipboard text="tom.sonvico.pro@gmail.com" className="">
               <p
                 style={{ cursor: "pointer" }}
@@ -47,11 +47,16 @@ export default function Contact() {
             >
               <i className="fa-brands fa-github"></i>
             </a>
+            <a href="https://twitter.com/SonviCode" target="blank"
+            className={`text-${colorText} text-4xl hover:text-${colorDeco}`}
+            >
+              <i className="fa-brands fa-twitter"></i>
+            </a>
           </div>
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-5 pt-20 pb-10 text-xs max-w-7xl mx-auto">
-        <p>© Website Professional created by Tom Sonvico - 2022</p>
+        <p>© Website Professional created by Tom Sonvico - 2023</p>
         <p>Realized with React and Tailwind</p>
       </div>
     </footer>

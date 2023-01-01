@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 import Techno from "./Techno";
 import html from "../assets/html.png";
@@ -13,15 +13,9 @@ import react from "../assets/react.png";
 import redux from "../assets/redux.webp";
 import typescript from "../assets/typescript.jpg";
 import tailwind from "../assets/tailwind.webp";
-import { gsap } from "gsap";
-// import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Technos() {
   const { colorText } = useContext(ThemeContext);
-
-  // const parallax = useRef(!null);
 
   return (
     <section id="techno">
@@ -31,7 +25,7 @@ export default function Technos() {
           <br />
           Mes Technologies préférées
         </h2>
-        <div className="grid grid-cols-auto-fit gap-10 max-w-3xl mx-auto">
+        <div className="grid grid-cols-3 sm:gap-10 max-w-xl mx-auto">
           <Techno icon={html} name="HTML" />
           <Techno icon={css} name="CSS" />
           <Techno icon={js} name="Javascript" />
@@ -40,24 +34,12 @@ export default function Technos() {
           <Techno icon={mysql} name="MySQL" />
           <Techno icon={firebase} name="Firebase" />
           <Techno icon={git} name="Git" />
-          <Techno icon={tailwind} name="Tailwind" />
+          <Techno icon={tailwind} name="Tailwind CSS" />
           <Techno icon={react} name="React.JS" />
           <Techno icon={redux} name="Redux" />
           <Techno icon={typescript} name="Typescript" />
         </div>
       </div>
-      {/* <div className="h-[800px] w-full bg-red-600">
-        <Parallax ref={parallax} pages={1} >
-          <ParallaxLayer
-            offset={0}
-            speed={1}
-            style={{ backgroundColor: "#805E73" }}
-          />
-          <ParallaxLayer offset={1} speed={1}>
-            <Techno icon={js} name="Javascript" />
-          </ParallaxLayer>
-        </Parallax>
-      </div> */}
     </section>
   );
 }
