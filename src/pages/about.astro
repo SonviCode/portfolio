@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout
+  title="À propos | Tom Sonvico"
+  description="À propos de Tom Sonvico, retrouvez ici tout mes expériences et formations réalisées ainsi que mes compétences acquises."
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="À propos de moi"
+        tagline="Merci d'être passé. Lisez ci-dessous pour en savoir plus sur moi-même et mon parcours."
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/pp2.jpg"
+          alt="Tom Sonvico"
+        />
+      </Hero>
+
+      <section>
+        <h2 class="section-title">Expériences</h2>
+        <div class="content">
+          <p>
+            <span class="content-title">Merck :</span> Développeur logiciel en alternance
+            au rythme de 3 semaines d'entreprise sur 4. Première expérience dans
+            le monde du développement. Le logiciel servira à des besoins du monde
+            de la pharma.
+          </p>
+          <p>
+            Stack : Spring Boot, React - Redux, Sql server, Ansible, Jenkins,
+            Suite Atlassian...
+          </p>
+          <p class="content-date">2022 - 2023</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Compétences</h2>
+        <div class="content">
+          <p>
+            <span class="content-title">Frontend :</span> React - Next.JS - Typescript
+            - Redux - Tailwind - SCSS - Javascript - HTML/CSS - Figma
+          </p>
+          <p>
+            <span class="content-title">Backend :</span> Node.JS - Express - MySQL
+            - MongoDB - Postman
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Formation</h2>
+        <div class="content">
+          <p>
+            <span class="content-title">3wAcademy :</span> Formation Full-Stack Développeur
+            / Node.jS et React / alternance ( bac + 2 )
+          </p>
+          <p class="content-date">2022 - 2023</p>
+          <p>
+            <span class="content-title">BUT MMI :</span> Métiers du Multimédia et
+            de l'Internet / PHP , HTML , CSS / 1ère année Université de Strasbourg
+          </p>
+          <p class="content-date">2021 - 2022</p>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content-title {
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  .content-date {
+    font-style: italic;
+    color: var(--gray-600);
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style>
