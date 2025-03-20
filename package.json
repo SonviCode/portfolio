@@ -9,6 +9,24 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.5.3"
+    "@astrojs/react": "^4.2.1",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@tailwindcss/vite": "^4.0.14",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "aos": "^2.3.4",
+    "astro": "^5.5.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.5.0",
+    "lucide-react": "^0.483.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-tsparticles": "^2.12.2",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.14",
+    "tsparticles": "^3.8.1",
+    "tsparticles-slim": "^2.12.0",
+    "tw-animate-css": "^1.2.4"
   }
 }
