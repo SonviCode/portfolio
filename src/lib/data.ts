@@ -58,7 +58,6 @@ export const education = [
     ],
   },
 ];
-
 export const skills = {
   programmingLanguages: [
     "TypeScript",
@@ -73,19 +72,22 @@ export const skills = {
     "Reactjs",
     "React Native",
     "Shadcn UI",
-    "Clerk (Auth)",
     "Tailwind CSS",
     "HTML",
     "CSS",
   ],
-  backendDevelopment: ["Nodejs", "Expressjs", "AWS"],
-  database: [
-    "PostgreSQL",
-    "Tinybird (analytics)",
+  backendDevelopment: ["Nodejs", "Expressjs"],
+  databaseAndStorage: ["PostgreSQL", "Drizzle (ORM)"],
+  cloudAndDevOps: ["AWS"],
+  toolsAndServices: [
+    "Clerk (Auth)",
     "Sanity (CMS)",
-    "Drizzle (ORM)",
+    "Tinybird (analytics)",
+    "Zod",
+    "Sentry",
+    "Mixpanel",
+    "Trigger.dev",
   ],
-  tools: ["Zod", "Sentry", "Mixpanel", "Trigger.dev"],
 };
 
 export const projects = [
