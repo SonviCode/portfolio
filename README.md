@@ -1,48 +1,196 @@
-# Astro Starter Kit: Basics
+# Modern Portfolio Template
 
-```sh
-bun create astro@latest -- --template basics
+A sleek, responsive portfolio website built with Astro, React, and Tailwind CSS, featuring modern animations and glassmorphism effects.
+
+![Portfolio Screenshot](screenshot.png)
+
+## Features
+
+- ✨ **Modern Design**: Clean, professional layout with glassmorphism effects
+- 🎨 **Animations**: Smooth transitions and interactive elements using Framer Motion
+- 🌙 **Dark/Light Mode**: Seamless theme switching with system preference detection
+- 📱 **Fully Responsive**: Optimized for all devices and screen sizes
+- 🚀 **Performance Focused**: Built with Astro for excellent loading speeds
+- 🧩 **Modular Structure**: Easy to customize and extend
+- 🌈 **Particles Background**: Subtle interactive particle effects
+- 🔍 **SEO Friendly**: Structured content for better search engine visibility
+
+## Demo
+
+[Live Demo](https://rishikeshs.com)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn or bun
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/my-portfolio.git
+   cd my-portfolio
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   bun install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   bun dev
+   ```
+
+4. Open your browser and visit `http://localhost:4321`
+
+## Customizing the Portfolio
+
+This portfolio is designed to be easily customizable mainly by editing the data in the `src/lib/data.ts` file:
+
+1. **Personal Information**: Update your name, location, email, and social links
+
+   ```typescript
+   export const personalInfo = {
+     name: "Your Name",
+     location: "Your Location",
+     email: "your.email@example.com",
+     github: "https://github.com/yourusername",
+     linkedin: "https://www.linkedin.com/in/yourusername/",
+   };
+   ```
+
+2. **Work Experience**: Add or modify your professional experience
+
+   ```typescript
+   export const workExperience = [
+     {
+       company: "Company Name",
+       location: "Location",
+       position: "Your Position",
+       period: "Start Date - End Date",
+       achievements: [
+         "Achievement 1",
+         "Achievement 2",
+         // ...
+       ],
+     },
+     // Add more work experiences
+   ];
+   ```
+
+3. **Education**: Update your educational background
+
+   ```typescript
+   export const education = [
+     {
+       institution: "University Name",
+       location: "Location",
+       degree: "Your Degree",
+       period: "Start Date - End Date",
+       achievements: [
+         "Achievement 1",
+         "Achievement 2",
+         // ...
+       ],
+     },
+     // Add more education entries
+   ];
+   ```
+
+4. **Skills**: Customize your skills by category
+
+   ```typescript
+   export const skills = {
+     programmingLanguages: ["Skill 1", "Skill 2"],
+     frontendDevelopment: ["Skill 1", "Skill 2"],
+     // Other skill categories
+   };
+   ```
+
+5. **Projects**: Showcase your projects
+
+   ```typescript
+   export const projects = [
+     {
+       title: "Project Name",
+       github: "https://github.com/yourusername/project",
+       description: [
+         "Description point 1",
+         "Description point 2",
+         // ...
+       ],
+     },
+     // Add more projects
+   ];
+   ```
+
+6. **Awards**: Highlight your achievements
+   ```typescript
+   export const awards = [
+     {
+       name: "Award Name",
+       issuer: "Issuer",
+       date: "Date",
+       type: "Type",
+       position: "Position",
+     },
+     // Add more awards
+   ];
+   ```
+
+## Building for Production
+
+To create a production build:
+
+```bash
+npm run build
+# or
+yarn build
+# or
+bun run build
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+To preview the production build locally:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run preview
+# or
+yarn preview
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Deployment
 
-## 🧞 Commands
+This portfolio can be deployed to any static site hosting service like Vercel, Netlify, GitHub Pages, etc.
 
-All commands are run from the root of the project, from a terminal:
+## License
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👀 Want to learn more?
+## Copyright
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+© 2025 Rishikesh S. All rights reserved.
+
+This template is designed to be used as a starting point for your personal portfolio. You are free to use it for your own portfolio by simply modifying the `data.ts` file and making any design adjustments. However, please include attribution to the original author when using this template.
+
+## Acknowledgments
+
+- [Astro](https://astro.build/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)
+- [tsParticles](https://particles.js.org/)
