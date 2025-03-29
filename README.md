@@ -12,7 +12,6 @@ A sleek, responsive portfolio website built with Astro, React, and Tailwind CSS,
 - 📱 **Fully Responsive**: Optimized for all devices and screen sizes
 - 🚀 **Performance Focused**: Built with Astro for excellent loading speeds
 - 🧩 **Modular Structure**: Easy to customize and extend
-- 🌈 **Particles Background**: Subtle interactive particle effects
 - 🔍 **SEO Friendly**: Structured content for better search engine visibility
 
 ## Demo
@@ -193,4 +192,3 @@ This template is designed to be used as a starting point for your personal portf
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Lucide Icons](https://lucide.dev/)
-- [tsParticles](https://particles.js.org/)
