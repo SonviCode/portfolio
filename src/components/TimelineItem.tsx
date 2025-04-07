@@ -6,6 +6,7 @@ interface TimelineItemProps {
   title: string;
   subtitle: string;
   date: string;
+  img: string;
   isLast?: boolean;
   index?: number;
   children?: React.ReactNode;
@@ -15,6 +16,7 @@ export default function TimelineItem({
   title,
   subtitle,
   date,
+  img,
   isLast = false,
   index = 0,
   children,
@@ -40,15 +42,14 @@ export default function TimelineItem({
           }}
           viewport={{ once: true, margin: "-50px" }}
         />
-        {!isLast && (
-          <motion.div
-            className="w-px grow bg-gradient-to-b from-purple-500/50 to-pink-500/30 dark:from-purple-500/30 dark:to-pink-500/10"
-            initial={{ height: 0 }}
-            whileInView={{ height: "100%" }}
-            transition={{ duration: 0.8, delay: index * 0.2 + 0.3 }}
-            viewport={{ once: true, margin: "-50px" }}
-          />
-        )}
+
+        <motion.div
+          className="w-px grow bg-gradient-to-b from-purple-500/50 to-pink-500/30 dark:from-purple-500/30 dark:to-pink-500/10"
+          initial={{ height: 0 }}
+          whileInView={{ height: "100%" }}
+          transition={{ duration: 0.8, delay: index * 0.2 + 0.3 }}
+          viewport={{ once: true, margin: "-50px" }}
+        />
       </div>
       <div className={cn("pb-8", isLast ? "pb-0" : "")}>
         <motion.div
@@ -58,7 +59,10 @@ export default function TimelineItem({
           transition={{ duration: 0.5, delay: index * 0.2 + 0.1 }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <h3 className="font-medium">{title}</h3>
+          <div className="flex gap-5 items-center">
+            <h3 className="font-medium">{title}</h3>
+            <img className="w-10" src={img} alt={title} />
+          </div>
           <p className="text-sm text-muted-foreground">{subtitle}</p>
           <p className="text-xs text-muted-foreground/70 mb-2">{date}</p>
         </motion.div>
